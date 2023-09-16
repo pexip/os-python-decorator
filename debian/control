@@ -7,7 +7,7 @@ Build-Depends: debhelper-compat (= 13), dh-python,
  python3-all,
  python3-pytest <!nocheck>,
  python3-setuptools
-Standards-Version: 4.6.0
+Standards-Version: 4.6.2
 Vcs-Git: https://salsa.debian.org/python-team/packages/python-decorator.git
 Vcs-Browser: https://salsa.debian.org/python-team/packages/python-decorator
 Homepage: https://github.com/micheles/decorator
