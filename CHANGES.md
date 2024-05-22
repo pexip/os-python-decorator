@@ -1,7 +1,52 @@
 HISTORY
 --------
 
-## unreleased
+## Unreleased
+
+## 5.1.1 (2022-01-07)
+
+Sangwoo Shim contributed a fix so that cythonized functions can be decorated.
+Brian McFee pointed out an issue in the `decorator_apply` example and
+Wim Glenn pointed out that the "fix" in version 5.1 broke
+`decorator.contextmanager` even more. Both issues are now solved.
+
+## 5.1.0 (2021-09-11)
+
+Added a function `decoratorx` using the `FunctionMaker` and thus
+preserving the signature of `__code__` objects. Then fixed three small bugs:
+- Sphinx was printing a few warnings when building the documentation, as
+  signaled by Tomasz Kłoczko
+- functions decorated with `decorator.contextmanager` were one-shot,
+  as discovered by Alex Pizarro.
+- `decorator.decorator` was not passing the kwsyntax argument.
+
+## 5.0.9 (2021-05-16)
+
+Fixed a test breaking PyPy. Restored support for Sphinx.
+
+## 5.0.8 (2021-05-15)
+
+Made the decorator module more robust when decorating builtin functions
+lacking dunder attributes, like `dict.__setitem__`.
+
+## 5.0.7 (2021-04-14)
+
+The decorator module was not passing correctly the defaults inside the
+`*args` tuple, thanks to Dan Shult for the fix. Also fixed some mispellings
+in the documentation and integrated codespell in the CI, thanks to 
+Christian Clauss.
+
+## 5.0.6 (2021-04-08)
+
+The decorator module was not copying the __module__ attribute anymore.
+Thanks to Nikolay Markov for the notice.
+
+## 5.0.5 (2021-04-04)
+
+Dropped support for Python < 3.5 with a substantial simplification of
+the code base (now building a decorator does not require calling "exec").
+Added a way to mimic functools.wraps-generated decorators.
+Ported the Continuous Integration from Travis to GitHub.
 
 ## 4.4.2 (2020-02-29)
 
