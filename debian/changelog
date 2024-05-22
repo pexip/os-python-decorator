@@ -1,3 +1,50 @@
+python-decorator (5.1.1-3) unstable; urgency=medium
+
+  [ Athos Ribeiro ]
+  * Team upload.
+  * Run tests with pytest instead of setup.py test.
+
+  [ Jeroen Ploemen ]
+  * Tests: rewrite to loop over all supported Python versions.
+
+ -- Athos Ribeiro <athoscribeiro@gmail.com>  Mon, 05 Dec 2022 11:07:15 +0000
+
+python-decorator (5.1.1-2) unstable; urgency=medium
+
+  * upload to unstable
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 18 Jun 2022 00:48:01 -0400
+
+python-decorator (5.1.1-1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream version 5.1.1
+
+ -- Gordon Ball <gordon@chronitis.net>  Fri, 07 Jan 2022 15:08:46 +0000
+
+python-decorator (5.1.0-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit, Repository-Browse.
+  * Bump debhelper from old 12 to 13.
+
+  [ Gordon Ball ]
+  * New upstream version 5.1.0
+  * Standards-Version: 4.6.0
+  * Run testsuite at build time
+  * Run testsuite against the installed library as an autopkgtest
+  * Update homepage to github.com/micheles/decorator
+
+ -- Gordon Ball <gordon@chronitis.net>  Sun, 10 Oct 2021 21:16:08 +0000
+
 python-decorator (4.4.2-2pexip1) pexip; urgency=medium
 
   * Prepare Pexip packaging

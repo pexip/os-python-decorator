@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e -u
+
+cp -va src/tests "$AUTOPKGTEST_TMP"/
+cd "$AUTOPKGTEST_TMP"
+
+for py in $(py3versions -s 2>/dev/null); do
+	echo "Running upstream tests with $py:"
+	$py -m pytest tests/test.py tests/documentation.py
+done
