@@ -2,7 +2,7 @@
 
 set -e -u
 
-cp -va src/tests "$AUTOPKGTEST_TMP"/
+cp -va tests "$AUTOPKGTEST_TMP"/
 cd "$AUTOPKGTEST_TMP"
 
 for py in $(py3versions -s 2>/dev/null); do

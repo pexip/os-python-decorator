@@ -5,9 +5,10 @@ Maintainer: Debian Python Team <team+python@tracker.debian.org>
 Uploaders: Piotr Ożarowski <piotr@debian.org>
 Build-Depends: debhelper-compat (= 13), dh-python,
  python3-all,
+ pybuild-plugin-pyproject,
  python3-pytest <!nocheck>,
  python3-setuptools
-Standards-Version: 4.6.2
+Standards-Version: 4.7.2
 Vcs-Git: https://salsa.debian.org/python-team/packages/python-decorator.git
 Vcs-Browser: https://salsa.debian.org/python-team/packages/python-decorator
 Homepage: https://github.com/micheles/decorator
