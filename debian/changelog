@@ -1,3 +1,9 @@
+python-decorator (5.2.1-2+pexip25u1) pexip-trixie; urgency=medium
+
+  * New upstream release
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Fri, 16 May 2025 10:12:51 +0100
+
 python-decorator (5.2.1-2) unstable; urgency=medium
 
   * Team upload.
