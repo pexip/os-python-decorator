@@ -1,3 +1,19 @@
+python-decorator (5.2.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Update autopkgtests for new tests directory location.
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 18 Apr 2025 17:28:10 +0100
+
+python-decorator (5.2.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Add pybuild-plugin-pyproject to Build-Depends
+  * Ship documentation.md in binary package
+  * Bump Standards-Version (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 05 Apr 2025 13:29:58 +0200
+
 python-decorator (5.1.1-5+pexip25u1) pexip-trixie; urgency=medium
 
   * Initial trixie build

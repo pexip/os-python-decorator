@@ -3,6 +3,28 @@ HISTORY
 
 ## Unreleased
 
+## 5.2.1 (2025-02-24)
+
+Shiv Krishna Jaiswal suggested how to manage che case of functions
+without __name__.
+Michał Górny contributed a fix for the generation of the source package.
+
+## 5.2.0 (2025-02-22)
+
+Changed the build procedure to use pyproject.toml and moved the tests
+outside of the generated wheel/tarball.
+
+Added official support for Python 3.11, 3.12, 3.13 (thanks to Hugo van
+Kemenade).
+
+Dropped official support for Python < 3.8: the module is
+expected to work on older Python versions, but I cannot test such
+versions on GitHub actions, so I cannot claim that it is officially
+supported.
+
+Dafu Wu provided support for decorating partial functions, i.e.
+functions wrapped by functools.partial.
+
 ## 5.1.1 (2022-01-07)
 
 Sangwoo Shim contributed a fix so that cythonized functions can be decorated.
@@ -32,7 +54,7 @@ lacking dunder attributes, like `dict.__setitem__`.
 ## 5.0.7 (2021-04-14)
 
 The decorator module was not passing correctly the defaults inside the
-`*args` tuple, thanks to Dan Shult for the fix. Also fixed some mispellings
+`*args` tuple, thanks to Dan Shult for the fix. Also fixed some misspellings
 in the documentation and integrated codespell in the CI, thanks to 
 Christian Clauss.
 
